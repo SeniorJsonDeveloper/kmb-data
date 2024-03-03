@@ -1,0 +1,19 @@
+server:
+  port: 1337
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/KmbData
+    username: root
+    password: demo2228
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    enabled: false
+    change-log: db/changelog/changelog.yml
+    default-schema: ${MYSQL_DATABASE_SCHEMA:KmbData}
+    liquibase-schema: ${MYSQL_DATABASE_SCHEMA:KmbData}

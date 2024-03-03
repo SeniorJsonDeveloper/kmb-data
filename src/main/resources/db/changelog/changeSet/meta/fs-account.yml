@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: fs-account.yml
+      author: novikov
+      changes:
+        - createTable:
+            tableName: fs_account
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                  remarks: Уникальный идентификатор
+              - column:
+                  name: login
+                  type: varchar(256)
+                  constraints:
+                    nullable: false
+                  remarks: Логин пользователя
+              - column:
+                  name: password
+                  type: decimal
+                  constraints:
+                    nullable: false
+                  remarks: Пароль пользователя
+              - column:
+                  name: last_login_at
+                  type: timestamp
+                  defaultValue: now()
+                  remarks: Дата и время создания

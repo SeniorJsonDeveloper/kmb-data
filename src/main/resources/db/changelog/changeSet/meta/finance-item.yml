@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: finance-item.yml
+      author: novikov
+      changes:
+        - createTable:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: parent_id
+                  type: int
+                  autoIncrement: true
+                  defaultValue: "-1"
+
+                  constraints:
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(25)
+                  constraints:
+                    nullable: false

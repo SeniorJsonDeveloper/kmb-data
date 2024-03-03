@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: "/meta/finance-item.yml"
+      relativeToChangelogFile: true
+  - include:
+      file: "/meta/fs-account.yml"
+      relativeToChangelogFile: true

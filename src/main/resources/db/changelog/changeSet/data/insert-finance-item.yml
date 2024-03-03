@@ -1,0 +1,381 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-finance-item.yml
+      author: novikov
+      changes:
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  value: "1"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  value: "Доходы"
+              - column:
+                  name: parent_id
+                  value: "-1"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "2"
+              - column:
+                  name: title
+                  value: "Кредитование"
+              - column:
+                  name: parent_id
+                  value: "1"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "3"
+              - column:
+                  name: title
+                  value: "Потребительские кредиты"
+              - column:
+                  name: parent_id
+                  value: "2"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "4"
+              - column:
+                  name: title
+                  value: "Комиссия за выдачу"
+              - column:
+                  name: parent_id
+                  value: "2"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "5"
+              - column:
+                  name: title
+                  value: "Кредитование"
+              - column:
+                  name: parent_id
+                  value: "2"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "6"
+              - column:
+                  name: title
+                  value: "Кредиты организациям"
+              - column:
+                  name: parent_id
+                  value: "1"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "7"
+              - column:
+                  name: title
+                  value: "Комиссия за оформление"
+              - column:
+                  name: parent_id
+                  value: "6"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "8"
+              - column:
+                  name: title
+                  value: "Страховой платеж"
+              - column:
+                  name: parent_id
+                  value: "6"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "9"
+              - column:
+                  name: title
+                  value: "Проценты по кредиту ЮЛ"
+              - column:
+                  name: parent_id
+                  value: "6"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "10"
+              - column:
+                  name: title
+                  value: "Инвестиции"
+              - column:
+                  name: parent_id
+                  value: "1"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "11"
+              - column:
+                  name: title
+                  value: "Операции с акциями"
+              - column:
+                  name: parent_id
+                  value: "10"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "12"
+              - column:
+                  name: title
+                  value: "Доход по акциям"
+              - column:
+                  name: parent_id
+                  value: "11"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "13"
+              - column:
+                  name: title
+                  value: "Доход от перепродажи"
+              - column:
+                  name: parent_id
+                  value: "11"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "14"
+              - column:
+                  name: title
+                  value: "Операции с облигацяими"
+              - column:
+                  name: parent_id
+                  value: "10"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "15"
+              - column:
+                  name: title
+                  value: "Доход по облигацяим"
+              - column:
+                  name: parent_id
+                  value: "14"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "16"
+              - column:
+                  name: title
+                  value: "Доход от продажи"
+              - column:
+                  name: parent_id
+                  value: "14"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "17"
+              - column:
+                  name: title
+                  value: "Расходы"
+              - column:
+                  name: parent_id
+                  value: "-1"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "18"
+              - column:
+                  name: title
+                  value: "Основная деятельность"
+              - column:
+                  name: parent_id
+                  value: "17"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "19"
+              - column:
+                  name: title
+                  value: "Постоянные расходы"
+              - column:
+                  name: parent_id
+                  value: "18"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "20"
+              - column:
+                  name: title
+                  value: "Арендная плата"
+              - column:
+                  name: parent_id
+                  value: "19"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "21"
+              - column:
+                  name: title
+                  value: "ФОТ"
+              - column:
+                  name: parent_id
+                  value: "19"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "22"
+              - column:
+                  name: title
+                  value: "Переменные расходы"
+              - column:
+                  name: parent_id
+                  value: "18"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "23"
+              - column:
+                  name: title
+                  value: "Обслуживание помещения"
+              - column:
+                  name: parent_id
+                  value: "22"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "24"
+              - column:
+                  name: title
+                  value: "Обслуживание оборудования"
+              - column:
+                  name: parent_id
+                  value: "22"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "25"
+              - column:
+                  name: title
+                  value: "Инвестиционная деятельность"
+              - column:
+                  name: parent_id
+                  value: "17"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "26"
+              - column:
+                  name: title
+                  value: "Операции с акциями"
+              - column:
+                  name: parent_id
+                  value: "25"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "27"
+              - column:
+                  name: title
+                  value: "Покупка акций"
+              - column:
+                  name: parent_id
+                  value: "26"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "27"
+              - column:
+                  name: title
+                  value: "Потеря средств при перепродаже"
+              - column:
+                  name: parent_id
+                  value: "26"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "28"
+              - column:
+                  name: title
+                  value: "Расходы"
+              - column:
+                  name: parent_id
+                  value: "26"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "29"
+              - column:
+                  name: title
+                  value: "Операции с облигациями"
+              - column:
+                  name: parent_id
+                  value: "25"
+        - insert:
+            tableName: fs_finance_item
+            columns:
+              - column:
+                  name: id
+                  value: "30"
+              - column:
+                  name: title
+                  value: "Покупка облигаций"
+              - column:
+                  name: parent_id
+                  value: "29"

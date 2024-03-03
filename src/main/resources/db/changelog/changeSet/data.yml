@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: "/data/insert-finance-item.yml"
+      relativeToChangelogFile: true
